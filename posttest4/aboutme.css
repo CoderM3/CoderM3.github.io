@@ -1,0 +1,203 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    overflow:auto;
+}
+
+a {
+    display: contents;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    height: 100%;
+    padding-bottom: 1%;
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+}
+
+.navbar ul{
+    position: relative;
+    list-style-type: none;
+    padding-left: 0px;
+    padding-top: 1%;
+    display: flex;
+    margin: 0px;
+    align-items: right;
+    justify-content: right;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navbar a{
+    color: rgb(46, 46, 46);
+    text-decoration: none;
+    padding: 1rem;
+    display: flex;
+}
+
+.navbar a:hover{
+    color: hsl(0, 100%, 62%);
+}
+
+.navbar li{
+    float: right;
+    padding-right: 5%;
+}
+
+.logo {
+    max-width: 7%;
+    height: auto;
+    position: absolute;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+.about-header {
+  padding: 50px;
+  text-align: center;
+  background-color: #695946;
+  color: white;
+}
+
+.container1 {
+  margin-top: 4%;
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+  text-align: left;
+  background-color: #694646;
+  color: white;
+}
+
+.container2 {
+  margin-top: -9%;
+  position: absolute;
+  right:0;
+  width: 50%;
+  padding: 50px;
+  text-align: right;
+  background-color: #695946;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 8px;
+  bottom: 250px;
+  right: 100%;
+  padding: 8px 8px;
+}
+
+.column {
+  float: right;
+  width: 13.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.dark-mode{
+  background-color:rgb(34, 34, 34);
+  color: white;
+}
+
+.darkie{
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 5%;
+}
+
+
+@media screen and (max-width: 768px) {
+.column {
+  width: 100%;
+  display: block;
+}
+
+.card{
+  position: absolute;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    height: 100vh;
+    width: 80%;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 999;
+    transition: right 0.3s ease;
+}
+
+.navbar.show {
+    right: 0;
+}
+
+.navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar li {
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+.hamburger {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.navbar a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+}
+}
+
+/*comot w3schools*/
+/* Scrollbar Custom*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #6e6e6e; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
