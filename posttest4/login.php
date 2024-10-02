@@ -16,16 +16,16 @@
 
     <div class="logon">
         <form action="index.php" method="POST" id="login-user">
+            <label for="mail"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required>
+            
             <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required>
 
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
-
+            
             <button type="submit">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
         </form>
     </div>
 </body>
