@@ -87,7 +87,15 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
-  
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
 
 button {
    background-color: #aa0404;
